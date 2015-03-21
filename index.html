@@ -1,0 +1,23 @@
+<!-- index.html -->
+<html>
+  <head>
+    <title>Angular 2 Todo App</title>
+    <script src="/dist/es6-shim.js"></script>
+  </head>
+  <body>
+  
+    <!-- The app component created in TodoApp.es6 -->
+    <todo-app>Warming up...</todo-app>
+    <script>
+      System.paths = {
+          'angular2/*':'/angular2/*.js',
+          'rtts_assert/*': '/rtts_assert/*.js',
+          'services/*' : '/services/*.js',
+          'todoApp': 'TodoApp.es6'
+      };
+
+      // Start the app by loading the main component
+      System.import('todoApp');
+    </script>
+  </body>
+</html>
